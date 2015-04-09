@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1709F5EB1AC7F7710008924F /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1709F5EA1AC7F7710008924F /* Countries.swift */; };
+		1709F5ED1AC802760008924F /* CountryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1709F5EC1AC802760008924F /* CountryDetailViewController.swift */; };
 		17BB77501AC6FB2B0053EB23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BB774F1AC6FB2B0053EB23 /* AppDelegate.swift */; };
 		17BB77521AC6FB2B0053EB23 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BB77511AC6FB2B0053EB23 /* MasterViewController.swift */; };
 		17BB77541AC6FB2B0053EB23 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BB77531AC6FB2B0053EB23 /* DetailViewController.swift */; };
@@ -29,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1709F5EA1AC7F7710008924F /* Countries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
+		1709F5EC1AC802760008924F /* CountryDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryDetailViewController.swift; sourceTree = "<group>"; };
 		17BB774A1AC6FB2B0053EB23 /* TomaszCountries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TomaszCountries.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17BB774E1AC6FB2B0053EB23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17BB774F1AC6FB2B0053EB23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +92,8 @@
 				17BB77531AC6FB2B0053EB23 /* DetailViewController.swift */,
 				17BB77731AC701E70053EB23 /* CountryTableViewController.swift */,
 				17BB77751AC702100053EB23 /* CountryTableViewCell.swift */,
+				1709F5EA1AC7F7710008924F /* Countries.swift */,
+				1709F5EC1AC802760008924F /* CountryDetailViewController.swift */,
 				17BB77551AC6FB2B0053EB23 /* Main.storyboard */,
 				17BB77581AC6FB2B0053EB23 /* Images.xcassets */,
 				17BB775A1AC6FB2B0053EB23 /* LaunchScreen.xib */,
@@ -224,7 +230,9 @@
 				17BB77741AC701E70053EB23 /* CountryTableViewController.swift in Sources */,
 				17BB77541AC6FB2B0053EB23 /* DetailViewController.swift in Sources */,
 				17BB77521AC6FB2B0053EB23 /* MasterViewController.swift in Sources */,
+				1709F5ED1AC802760008924F /* CountryDetailViewController.swift in Sources */,
 				17BB77501AC6FB2B0053EB23 /* AppDelegate.swift in Sources */,
+				1709F5EB1AC7F7710008924F /* Countries.swift in Sources */,
 				17BB77761AC702100053EB23 /* CountryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,6 +425,7 @@
 				17BB776D1AC6FB2B0053EB23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17BB776E1AC6FB2B0053EB23 /* Build configuration list for PBXNativeTarget "TomaszCountriesTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +434,7 @@
 				17BB77701AC6FB2B0053EB23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

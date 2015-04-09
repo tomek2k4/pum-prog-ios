@@ -10,19 +10,20 @@ import UIKit
 
 class CountryTableViewController: UITableViewController {
 
-    var countries = [String]()
+    var countries = [Country]()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        countries.append("Polska")
-        countries.append("Niemcy")
-        countries.append("Czechy")
-        countries.append("Slowacja")
-        countries.append("Ukraina")
-        countries.append("Bialorus")
-        countries.append("Litwa")
-        countries.append("Rosja")
+        countries.append( Country(name:"Australia",population:230000000,capitalCity:City(name:"Canberra",population:40000),flag:UIImage(named: "australia-flag")))
+        countries.append( Country(name:"Germany",population:660000000,capitalCity:City(name:"Berlin",population:5000000),flag:UIImage(named: "germany-flag")))
+//        countries.append("Niemcy")
+//        countries.append("Czechy")
+//        countries.append("Slowacja")
+//        countries.append("Ukraina")
+//        countries.append("Bialorus")
+//        countries.append("Litwa")
+//        countries.append("Rosja")
         
         
         // Uncomment the following line to preserve selection between presentations
@@ -31,6 +32,19 @@ class CountryTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let selectedRow = tableView.indexPathForSelectedRow()
+        
+        let dvc = segue.destinationViewController as CountryDetailViewController
+        dvc.country = countries[selectedRow!.row]
+        
+    }
+    
+    
+    
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -57,7 +71,9 @@ class CountryTableViewController: UITableViewController {
 
         // Configure the cell...
         
-        cell.countryLabel.text = countries[indexPath.row]
+        cell.countryLabel.text = countries[indexPath.row].name
+        cell.capitalCity.text = countries[indexPath.row].capitalCity.name
+        
 
         return cell
     }
